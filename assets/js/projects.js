@@ -34,6 +34,12 @@ fetch('./projects.json')
      });
    });
 
+   const projectItems = document.querySelectorAll('.project-item');
+    projectItems.forEach((item) => {
+      const category = item.querySelector('.project-category').textContent.toLowerCase();
+      item.setAttribute('data-filter-item', category);
+    });
+
    const selectList = document.querySelector('.select-list');
     Object.keys(data).forEach(category => {
       const selectItem = document.createElement('li');

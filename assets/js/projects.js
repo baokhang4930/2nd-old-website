@@ -18,6 +18,7 @@ fetch('./projects.json')
        const projectItem = document.createElement('li');
        projectItem.className = 'project-item active';
        projectItem.dataset.filterItem = category;
+       projectItem.setAttribute('data-filter-item', '');
        projectItem.innerHTML = `
          <a href="#">
            <figure class="project-img">
@@ -33,11 +34,6 @@ fetch('./projects.json')
        projectList.appendChild(projectItem);
      });
    });
-
-   const projectItems = document.querySelectorAll('.project-item');
-    projectItems.forEach((item) => {
-      item.setAttribute('data-filter-item', '');
-    });
 
    const selectList = document.querySelector('.select-list');
     Object.keys(data).forEach(category => {

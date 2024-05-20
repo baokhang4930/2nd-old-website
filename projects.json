@@ -1,0 +1,20 @@
+{
+  "Minecraft": [
+    {
+      "title": "Test 1",
+      "image": "project-1.jpg"
+    }
+  ],
+  "Discord": [
+    {
+      "title": "Test 2",
+      "image": "project-3.jpg"
+    }
+  ],
+  "AI": [
+    {
+      "title": "Test 3",
+      "image": "project-4.png"
+    }
+  ]
+}

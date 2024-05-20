@@ -19,6 +19,7 @@ fetch('./projects.json')
        projectItem.className = 'project-item active';
        projectItem.dataset.filterItem = category;
        projectItem.setAttribute('data-filter-item', '');
+       projectItem.setAttribute('data-category', category.toLowerCase());
        projectItem.innerHTML = `
          <a href="#">
            <figure class="project-img">
